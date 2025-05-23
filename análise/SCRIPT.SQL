@@ -32,25 +32,18 @@ INSERT INTO SOCCER_CLUB(SOCCER_CLUB_ID,CLUB_NAME,EMBLEM,TITLES,LEAGUE_ID) VALUES
 -- VER A TABELA
 SELECT* FROM LEAGUE WHERE LEAGUE_ID=2;(NOME DA TABELA);
 -- ALTERAR DADOS
-UPDATE SOCCER_CLUB SET CLUB_NAME='Milan' WHERE SOCCER_CLUB_ID=2;
+UPDATE SOCCER_CLUB SET TITLES='1' WHERE SOCCER_CLUB_ID=7;
 INSERT INTO LEAGUE(LEAGUE_ID, LEAGUE_NAME, RULESET, EMBLEM) VALUES(2,'Libertadores','grupos e mata mata','https://pt.wikipedia.org/wiki/Ficheiro:Liverpool_FC.svg');
 -- DELETAR DADOS
 DELETE FROM LEAGUE WHERE LEAGUE_ID=2
--- CD
-cd git/champions-project
+-- JUNTAR TABELAS
 
-//Iniciar um git project
-git init
+INSERT INTO LEAGUE(LEAGUE_ID, LEAGUE_NAME, RULESET, EMBLEM) VALUES(3,'sulamericana','grupo e mata mata','https://pt.wikipedia.org/wiki/Ficheiro:Liverpool_FC.svg');
+INSERT INTO SOCCER_CLUB(SOCCER_CLUB_ID,CLUB_NAME,EMBLEM,TITLES,LEAGUE_ID) VALUES(7,'Racing','https://en.wikipedia.org/wiki/File:Real_Madrid_CF.svg',2,1);
 
-//Add All
-git add .
-
-//Commit(Subindo para o versionador)
-git commit -m "Initial commit"
-
-//Push
-git push origin/master
-
-
-//Clonando repositório
-git clone git@github.com:carlos-passos/champions-project.git
+SELECT * FROM LEAGUE L
+INNER JOIN SOCCER_CLUB SC 
+ON L.LEAGUE_ID=SC.SOCCER_CLUB_ID;
+-- DESCREVER A TABELA
+DESC
+SELECT L.LEAGUE_NAME, SC.CLUB_NAME, SC.TITLES FROM LEAGUE L INNER JOIN SOCCER_CLUB SC ON L.LEAGUE_ID=SC.LEAGUE_ID;
