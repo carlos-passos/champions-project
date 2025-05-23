@@ -30,4 +30,27 @@ INSERT INTO SOCCER_CLUB(SOCCER_CLUB_ID,CLUB_NAME,EMBLEM,TITLES,LEAGUE_ID) VALUES
 INSERT INTO SOCCER_CLUB(SOCCER_CLUB_ID,CLUB_NAME,EMBLEM,TITLES,LEAGUE_ID) VALUES(2,'MILAN','https://en.wikipedia.org/wiki/File:Real_Madrid_CF.svg',7,1);
 INSERT INTO SOCCER_CLUB(SOCCER_CLUB_ID,CLUB_NAME,EMBLEM,TITLES,LEAGUE_ID) VALUES(3,'LIVERPOOL','https://en.wikipedia.org/wiki/File:Real_Madrid_CF.svg',6,1);
 -- VER A TABELA
-SELECT*
+SELECT* FROM LEAGUE WHERE LEAGUE_ID=2;(NOME DA TABELA);
+-- ALTERAR DADOS
+UPDATE SOCCER_CLUB SET CLUB_NAME='Milan' WHERE SOCCER_CLUB_ID=2;
+INSERT INTO LEAGUE(LEAGUE_ID, LEAGUE_NAME, RULESET, EMBLEM) VALUES(2,'Libertadores','grupos e mata mata','https://pt.wikipedia.org/wiki/Ficheiro:Liverpool_FC.svg');
+-- DELETAR DADOS
+DELETE FROM LEAGUE WHERE LEAGUE_ID=2
+-- CD
+cd git/champions-project
+
+//Iniciar um git project
+git init
+
+//Add All
+git add .
+
+//Commit(Subindo para o versionador)
+git commit -m "Initial commit"
+
+//Push
+git push origin/master
+
+
+//Clonando repositório
+git clone git@github.com:carlos-passos/champions-project.git

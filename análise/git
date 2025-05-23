@@ -1,0 +1,17 @@
+cd git/champions-project
+
+//Iniciar um git project
+git init
+
+//Add All
+git add .
+
+//Commit(Subindo para o versionador)
+git commit -m "Initial commit"
+
+//Push
+git push origin/master
+
+
+//Clonando repositório
+git clone git@github.com:carlos-passos/champions-project.git
