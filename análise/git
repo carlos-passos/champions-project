@@ -3,11 +3,14 @@ cd git/champions-project
 //Iniciar um git project
 git init
 
+//status
+git status
+
 //Add All
 git add .
 
 //Commit(Subindo para o versionador)
-git commit -m "Initial commit"
+git commit -m "projeto champions"
 
 //Push
 git push origin/master
