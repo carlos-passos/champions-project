@@ -1,5 +1,8 @@
 cd git/champions-project
 
+//Sair da pasta
+cd .
+
 //Iniciar um git project
 git init
 
