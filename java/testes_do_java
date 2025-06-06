@@ -1,0 +1,73 @@
+public class carro {
+
+    String nome;
+    String marca;
+    int ano;
+    int velocidade;
+
+    void acelerar(int aceleracao) {
+        velocidade += aceleracao;
+    }
+    void frear(int reduzir){
+        velocidade -= reduzir;
+    }
+    void buzinar(){
+        System.out.println("bibibi");
+    }
+}
+    public class teste {
+    //instanciando o objeto
+    public static void main(String[] args) {
+        carro c1 = new carro();
+        c1.nome = "Uno";
+        c1.marca = "Fiat";
+        c1.ano = 2015;
+        c1.velocidade = 60;
+
+        c1.acelerar(10);
+        System.out.println("Velocidade: " + c1.velocidade + " km/h" );
+
+        c1.frear(30);
+        System.out.println("Velocidade: " + c1.velocidade + " km/h" );
+    }
+    public class produto {
+
+   //atributos
+    String nome;
+    String marca;
+    float preco;
+
+    //construtores
+    produto(){
+
+    }
+    produto(String nome){
+        this.nome = nome;
+    }
+    produto(String nome, String marca){
+        this.nome = nome;
+        this.marca = marca;
+    }
+    produto(String nome, String marca, float preco){
+        this.nome = nome;
+        this.marca = marca;
+        this.preco = preco;
+    }
+}
+public class teste {
+    public static void main(String[] args) {
+
+        //construtor padrão
+        produto p1 = new produto();
+        p1.nome = "caneta preta";
+        p1.marca = "bic";
+        p1.preco = 2;
+    }
+        //construtor de dois paramêtros
+        produto p2 = new produto("caneta vermelha", "faber");
+
+
+        //construtor de tres parametros
+        produto p3 = new produto("borracha", "faber", 5);
+}
+}
