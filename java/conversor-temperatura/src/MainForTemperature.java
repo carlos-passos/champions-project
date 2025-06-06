@@ -6,7 +6,9 @@ public class MainForTemperature {
         System.out.println("Agora está "+temperature.getCelsius()+" graus celsius em Campo Largo.");
 
         temperature.setFarenheit(64);
-        System.out.println("Agora está"+temperature.getFarenheit()+" farenheit em Campo Largo");
+        System.out.println("Agora está "+temperature.getFarenheit()+" farenheit em Campo Largo");
+
+
 
 //        ===============================================
 
