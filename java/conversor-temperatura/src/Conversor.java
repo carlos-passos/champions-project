@@ -13,5 +13,12 @@ public class Conversor {
         this.temperature = temperature;
         this.temperature.setKelvin(kelvin);
     }
+    public void fromCelsiusToFahrenheit(Temperature temperature) {
+        double celcius = temperature.getFarenheit() / 9 * 5 - 32;
+        this.temperature = temperature;
+        this.temperature.setCelsius(celcius);
+    }
+
+    }
 
 }
