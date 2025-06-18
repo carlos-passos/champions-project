@@ -1,18 +1,41 @@
-public class Main {
-    public class carro{
+public class Carro {
 
-    String nome;
-    String marca;
-    int ano;
-    int velocidade;
+    private String nome;
+    private String marca;
+    private int ano;
+    private int velocidade;
+
+
+
+    public String getNome() {
+        return nome;
     }
-    void acelerar(int aceleracao){
-        int vel -= aceleracao;
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-    void frear(int reduzir){
-        int vel -= reduzir;
+
+    public String getMarca() {
+        return marca;
     }
-    void buzinar() {
-        system
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public int getVelocidade() {
+        return velocidade;
+    }
+
+    public void setVelocidade(int velocidade) {
+        this.velocidade = velocidade;
     }
 }
