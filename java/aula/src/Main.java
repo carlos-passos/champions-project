@@ -48,7 +48,7 @@ public class Main {
             i = i + 1;
         }
         for (int i = 0; 1 < ListaDeCarro.length; i++) {
-            System.out.println("Nome...:"+ ListaDeCarro[i].getNome()););
+            System.out.println("Nome...:"+ ListaDeCarro[i].getNome()));
         }
     }
 
