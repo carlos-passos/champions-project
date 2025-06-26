@@ -17,36 +17,30 @@ public class Main {
         Liga3.setFormato("Liga");
         Liga3.setRodadas(38);
 
-        League[] ListaDeLigas = new League[3];
-        ListaDeLigas[0] = Liga1;
-        ListaDeLigas[1] = Liga2;
-        ListaDeLigas[2] = Liga3;
+        League[] ListaDeLigas = { Liga1, Liga2, Liga3 };
+
+        for (int i = 0; i < ListaDeLigas.length; i++) {
+            System.out.println("Nome...: " + ListaDeLigas[i].getNome());
+        }
+
+        //------------------------------------------------------------------------------------------
 
         Team Time1 = new Team();
         Time1.setNome("Real Madrid");
-        Time1.setTítulos(17);
+        Time1.setTitulos(17);
 
         Team Time2 = new Team();
         Time2.setNome("Corinthians");
-        Time2.setTítulos(7);
+        Time2.setTitulos(7);
 
         Team Time3 = new Team();
         Time3.setNome("Liverpool");
-        Time3.setTítulos(2);
+        Time3.setTitulos(2);
 
-        Team[] ListaDeTimes = new Team[3];
-        ListaDeTimes[0] = Time1;
-        ListaDeTimes[1] = Time2;
-        ListaDeTimes[2] = Time3;
+        Team[] ListaDeTimes = { Time1, Time2, Time3 };
 
-
-
-        for (int i = 0; 1 < ListaDeTimes.length; i++) {
-            System.out.println("Nome...:" + ListaDeTimes[i].getNome());
-        }
-
-        for (int i = 0; 1 < ListaDeTimes.length; i++) {
-            System.out.println("Nome...:" + ListaDeTimes[i].getNome());
+        for (int i = 0; i < ListaDeTimes.length; i++) {
+            System.out.println("Nome...: " + ListaDeTimes[i].getNome());
         }
     }
 }
