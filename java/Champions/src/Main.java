@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,11 +20,21 @@ public class Main {
         Liga3.setFormato("Liga");
         Liga3.setRodadas(38);
 
-        League[] ListaDeLigas = { Liga1, Liga2, Liga3 };
+        League[] ligasArray = new League[3];
+        ligasArray[0] = Liga1;
+        ligasArray[1] = Liga2;
+        ligasArray[2] = Liga3;
 
-        for (int i = 0; i < ListaDeLigas.length; i++) {
-            System.out.println("Nome...: " + ListaDeLigas[i].getNome());
+        List<League> ligasList = new ArrayList<League>();
+
+        for (League l : ligasArray) {
+            ligasList.add(l);
         }
+
+        for (League l : ligasArray) {
+            System.out.println("Nome...: " + l.getNome());
+        }
+
 
         //------------------------------------------------------------------------------------------
 
@@ -37,10 +50,19 @@ public class Main {
         Time3.setNome("Liverpool");
         Time3.setTitulos(2);
 
-        Team[] ListaDeTimes = { Time1, Time2, Time3 };
+        Team[] timesArray = new Team[3];
+        timesArray[0] = Time1;
+        timesArray[1] = Time2;
+        timesArray[2] = Time3;
 
-        for (int i = 0; i < ListaDeTimes.length; i++) {
-            System.out.println("Nome...: " + ListaDeTimes[i].getNome());
+        List<Team> timesList = new ArrayList<Team>();
+
+        for (Team t : timesArray) {
+            timesList.add(t);
         }
-    }
+
+        for (Team t : timesArray) {
+            System.out.println("Nome...: " + t.getNome());
+        }
+}
 }
